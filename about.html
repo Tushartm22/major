@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Hind+Siliguri&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('doctor.png') no-repeat;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnlogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+        fieldset{
+            height: 500px;
+            width: 300px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            /* margin: auto; */
+            backdrop-filter: blur(5px);
+            font-size: 1.5em;
+            display: inline-block;
+            color:white;
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="adminlogin.html">Admin Login</a>
+            <a href="contact.html">Contact</a>
+            <!-- <button class="btnlogin-popup">Login</button> -->
+        </nav>
+    </header>
+    <!-- <h2>About Us</h2> -->
+    
+    <!-- <textarea name="About Us " id="" cols="300" rows="100">
+        <p><strong>This website is all about to contain all the data of the patient which gives easy access the doctor and the patient itself to know about the patient's medical condition which includes all the history of the patient as well as the old prescriptions of the patient which helps the doctor to find the safest way to make the patient well.</strong></p>
+    </textarea> -->
+    <!-- <div class="fieldset1"> -->
+        <fieldset>
+            <legend  style="color: black;" align = 'center'><h3>Overview</h3></legend>
+            <a><strong>This website is all about to contain all the data of the patient which gives easy access the doctor and the patient itself to know about the patient's medical condition which includes all the history of the patient as well as the old prescriptions of the patient which helps the doctor to find the safest way to make the patient well.</strong></a>
+        </fieldset>
+
+            <fieldset>
+                <legend style="color: black;" align = 'center'><h3>History</h3></legend>
+               <a><strong>So we don't have any history yet because this is our first ever project but we are sure that we can make history one day</strong></span>
+            </fieldset>
+    <!-- </div> -->
+
+    <!-- <div class="fieldset2">
+
+    </div> -->
+</body>
+</html>

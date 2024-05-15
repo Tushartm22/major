@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/5f1f66509e.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="adminlogin.html">Admin Login</a>
+            <a href="contact.html">Contact</a>
+            <!-- <button class="btnlogin-popup">Login</button> -->
+        </nav>
+    </header>
+    <div class="wrapper active-popup">
+        <span class="icon-close">
+            <i class="fa-solid fa-square-xmark"></i>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="http://localhost/miniproject/login.php" method="post">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-regular fa-id-card"></i></span>
+                    <input type="text" name="useremail" >
+                    <label>User E-mail</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" name="password" >
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                  <!-- login submit js -->
+                <button type="Submit" name="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?  <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="http://localhost/miniproject/register.php" method="post">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" name="username" >
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="text" name="useremail" >
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" name="password" >
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="'icon"><i></i></span>
+                    <input type="date" name="userdob">
+                    <label>Date Of Birth</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-person-half-dress"></i></span>
+                    <input type="text" name="usergender">
+                    <label>Gender</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-droplet"></i></span>
+                    <input type="text" name="userbloodgrp">
+                    <label>Blood Group</label>
+                    
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-location-pin"></i></span>
+                    <input type="text" name="useraddress">
+                    <label>weight</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                    <input type="text" name="userheight">
+                    <label>Height</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                    <input type="text" name="usernumber">
+                    <label>FAT%</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" required>I agree to the terms and conditions</label>    
+                </div>
+                <button type="Submit" name="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?  <a href="#" class="login-link">login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script> 
+</body>
+</html>
